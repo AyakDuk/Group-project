@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign Up Page</title>
+	<style type="text/css">
+			main{
+width: 100%;
+
+	background-position: center; 
+	background-size: cover;
+	height: 109vh;
+}
+.navbar{
+	width: 1200px;
+	height: 75px;
+	margin: auto;
+}
+.icon{
+	width: 200px;
+	float: left;
+	height: 70px;
+}
+.logo{
+	color: yellow;
+	font-size: 35px;
+	font-family: Arial;
+	padding-left: 20px;
+	float: left;
+	padding-top: 10px;
+}
+.menu{
+	width: 400px;
+	float: left;
+	height: 70px;
+tex
+}
+ul{
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul li{
+	list-style: none;
+	margin-left: 62px;
+	margin-top: 27px;
+	font-size: 14px ;
+}
+ul li A{
+	text-decoration: none;
+	color: yellow;
+	font-family: Arial;
+	font-weight: bold;
+	transition: 0.5s,ease-in-out;
+}
+ul li A hover{
+	color: white;
+	cursor: pointer;
+}
+p{
+		color: yellow;
+}
+
+
+
+
+
+	</style>
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+				<h2 class="logo">ERRAND MASTER</h2>
+		</div>
+		<div class="menu">
+			<ul>
+<li><A href="index.html"style="text-align: right;">Home</A></li>
+<li><A href="aboutus.html"style="text-align: right;">About Us</A></li>
+<li><A href="contacts.html"style="text-align: right;">Contact Us</A></li>
+	</ul>
+		</div>
+	</div>
+</div>
+	</style>
+
+</head>
+	<style type="text/css">
+		#fname,#lname,#email,#pass1,#pass2,#age,#submit{
+			padding: 10px;
+			text-align: left;
+		}
+	.signupspace{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	background: yellow;
+	border-radius: 10px;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image:  url(file:///Applications/XAMPP/xamppfiles/Group-project/background.jpg.png) ;	height: 100vh;
+	background-size: cover;
+	overflow: hidden;
+
+}
+	h1{
+		text-align: center;
+		padding: 10px;
+	}
+	.signupspace form{
+		padding: 50px;
+	box-sizing: border-box;
+	}
+	form .text{
+	position: relative;
+	border-bottom: 2px;
+	margin: 30px;
+}
+.text input{
+	width: 100%;
+	padding: 5px;
+	height: 20px;
+	border: none;
+	outline: none;
+
+
+}
+	input[type="submit"]{
+	width: 100%;
+	height: 50px;
+	border: 1px solid;
+	border-radius: 25px;
+	background-color: forestgreen;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	}
+	
+	</style>
+
+<body>
+	<div class="signupspace"><h1>Sign Up</h1>
+	<form onsubmit="myfun()" action="login.html"method="post">
+		<div class="text"><input type="text"name="fname"placeholder="First name" id="fname"></div>
+		<div class="text"><input type="text"name="lname"placeholder="Last name"id="lname"></div>
+		<div class="text"><input type="text"name="email"placeholder="Email"id="email"></div>
+
+		<div class="text"><input type="number"name="mobile"placeholder="Mobile Number"id="mobilenumber"></div>
+		<div class="text"><input type="password"name="password"placeholder="Input password"id="pass1"></div>
+		<div class="text"><input type="password"name="password"placeholder="Confirm password"id="pass2"></div>
+	
+		<div><input type="submit"name="submit"></div>
+	</form>
+	
+	</div>
+
+	<script type="text/javascript">
+		function myfun(){
+			if(document.getElementById('fname').value == " "){
+				alert("Enter first name");
+			} else if (document.getElementById('lname').value == " "){
+				alert("Enter last name");
+			}else if (document.getElementById('pass1').value == " "){
+				alert("Enter passowrd");
+			}else if (document.getElementById('pass2').value != document.getElementById('pass1').value){
+				alert("Passwords do not match");
+			}
+			else {
+					alert("Sign up successful");
+				}
+			}
+
+	</script>
+</body>
+</html
+
+	
