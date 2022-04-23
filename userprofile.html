@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> User Profile Page</title>
+	<style type="text/css">
+		main{
+width: 100%;
+
+	background-position: center; 
+	background-size: cover;
+	height: 109vh;
+}
+.navbar{
+	width: 1200px;
+	height: 75px;
+	margin: auto;
+}
+.icon{
+	width: 200px;
+	float: left;
+	height: 70px;
+}
+.logo{
+	color: yellow;
+	font-size: 35px;
+	font-family: Arial;
+	padding-left: 20px;
+	float: left;
+	padding-top: 10px;
+}
+.menu{
+	width: 400px;
+	float: left;
+	height: 70px;
+tex
+}
+ul{
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul li{
+	list-style: none;
+	margin-left: 62px;
+	margin-top: 27px;
+	font-size: 14px ;
+}
+ul li A{
+	text-decoration: none;
+	color: yellow;
+	font-family: Arial;
+	font-weight: bold;
+	transition: 0.5s,ease-in-out;
+}
+ul li A hover{
+	color: white;
+	cursor: pointer;
+}
+p{
+		color: yellow;
+}
+
+
+
+
+
+	</style>
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+				<h2 class="logo">ERRAND MASTER</h2>
+		</div>
+		<div class="menu">
+			<ul>
+<li><A href="index.html"style="text-align: right;">Home</A></li>
+<li><A href="aboutus.html"style="text-align: right;">About Us</A></li>
+<li><A href="contacts.html"style="text-align: right;">Contact Us</A></li>
+<li><A href="index.html"style="text-align: right;">Logout</A></li>
+	</ul>
+		</div>
+	</div>
+</div>
+</head>
+<script type="text/javascript">
+const tab = document.querySelector(".profiletab");
+fun tab()
+</script>
+<style type="text/css">
+	body{
+		background-image: url(file:///Applications/XAMPP/xamppfiles/Group-project/background.jpg.png) ;
+		overflow: hidden;
+	}
+	.container{
+		background: yellow;
+		width: 540px;
+		height: 400px;
+		margin: 0;
+		position: relative;
+		margin-top: 10%;
+		box-shadow: 2px 5px 20px;
+
+	}
+	.rightside{
+		width: 60%;
+		margin-left: 27%;
+
+	}
+	.leftside{
+		float: left;
+		top: -5%;
+		left: 5%;
+		position: absolute;
+		width: 15%;
+		height: 110%;
+		background: white;
+		box-shadow: 3px 3px 10px;
+	}
+	h1{
+		font-size: 1.2rem;
+		margin-top: 40px;
+		margin-bottom: 35px;
+	}
+	h2{
+		font-size: 15px;
+		letter-spacing: 1px;
+		margin-top: 10px;
+		margin-left: 2px;
+	}
+
+	.input{
+		border: 0;
+		width: 80%;
+		font-size: 0.7em;
+		padding: 3px;
+		outline: none;
+	}
+	.button{
+		margin-top: 15px;
+font-size: 15px;
+border: 0;
+color: white;
+background: grey;
+padding: 7px 15px;
+box-shadow: black;
+cursor: pointer;
+	}
+
+	
+</style>
+
+<body>
+	<div class="container">
+		<div class="leftside">
+			<nav>
+				<a on onclick="tab()" class="activetab">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" width="70%">
+				</a>
+			</nav>
+		</div>
+		<div class="rightside">
+			<div class=show profiletab>
+				<h1>Profile Info</h1>
+				<h2>First Name</h2>
+				<input type="text"  class="input"value=" ">
+				<h2>Last Name</h2>
+				<input type="text"  class="input"value=" ">
+				<h2>Email</h2>
+				<input type="email"  class="input"value=" ">
+				<h2>Password</h2>
+				<input type="password"  class="input"value=" ">
+<button class="button">Update</button>
+<button class="button">Delete</button>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
